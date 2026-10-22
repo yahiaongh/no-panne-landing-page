@@ -1,216 +1,286 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+
+<html dir="ltr" lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffcc00">
-  <meta name="description" content="NoPanne vous aide à trouver un service de dépannage ou un mécanicien, consulter les informations des prestataires et organiser votre rendez-vous en Algérie.">
-  <title>No Panne — L'assistance auto, plus simple</title>
-  <link rel="preload" as="image" href="app-preview.png">
-  <link rel="stylesheet" href="./style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffcc00" name="theme-color"/>
+<meta content="NoPanne vous aide à trouver un service de dépannage ou un mécanicien, consulter les informations des prestataires et organiser votre rendez-vous en Algérie." name="description"/>
+<title>NoPanne — L'assistance auto, plus simple</title>
+<link as="image" href="app-preview.png" rel="preload"/>
+<link href="./style.css" rel="stylesheet"/>
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
+<a class="skip-link" data-i18n="skip" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a aria-label="NoPanne, accueil" class="brand" data-i18n-aria="brandHomeAria" href="#accueil">
+<span aria-hidden="true" class="brand-mark">
+<svg fill="none" viewbox="0 0 32 32"><path d="M5 18.5 7.2 12a3 3 0 0 1 2.8-2h12a3 3 0 0 1 2.8 2L27 18.5v5a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 23 23.5V22H9v1.5A1.5 1.5 0 0 1 7.5 25h-1A1.5 1.5 0 0 1 5 23.5v-5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path><path d="M8 17h16M10 21h.01M22 21h.01" stroke="currentColor" stroke-linecap="round" stroke-width="2.3"></path></svg>
+</span>
+<span class="brand-name">NoPanne</span></span>
+</a>
+<nav aria-label="Navigation principale" class="nav-links" data-i18n-aria="navAria">
+<a data-i18n="navBenefits" href="#avantages">Avantages</a>
+<a data-i18n="navHow" href="#fonctionnement">Comment ça marche</a>
+<a data-i18n="navServices" href="#services">Services</a>
+</nav>
+<div aria-label="Choisir la langue" class="language-switch" data-i18n-aria="languageLabel" role="group"><button aria-pressed="true" class="language-button is-active" data-lang="fr" type="button">FR</button><button aria-pressed="false" class="language-button" data-lang="ar" type="button">AR</button></div><a class="button button-nav" data-i18n="navContact" href="#contact">Nous contacter <span aria-hidden="true">↗</span></a>
+</div>
+</header>
+<main id="contenu">
+<section class="hero section-shell" id="accueil">
+<div aria-hidden="true" class="hero-glow hero-glow-one"></div>
+<div aria-hidden="true" class="hero-glow hero-glow-two"></div>
+<div class="container hero-grid">
+<div class="hero-copy">
+<div class="eyebrow" data-i18n="heroEyebrow"><span class="eyebrow-dot"></span> L'assistance auto en Algérie</div>
+<h1 data-i18n="heroTitle">Un souci sur la route ? <span>On vous aide à avancer.</span></h1>
+<p class="hero-lead" data-i18n="heroLead">Dépannage, remorquage ou mécanicien : retrouvez les services auto dont vous avez besoin et organisez votre prise en charge depuis une seule application.</p>
+<div class="hero-actions">
+<a class="button button-primary" data-i18n="heroCta" href="#fonctionnement">Découvrir NoPanne <span aria-hidden="true">→</span></a>
+<a class="button button-quiet" data-i18n="heroExplore" href="#services"><span aria-hidden="true" class="play-icon">▶</span> Explorer les services</a>
+</div>
+<div aria-label="Les points forts" class="hero-points" data-i18n-aria="heroPointsAria">
+<span data-i18n="pointHelp"><span aria-hidden="true" class="check">✓</span> Dépannage &amp; remorquage</span>
+<span data-i18n="pointMechanics"><span aria-hidden="true" class="check">✓</span> Mécaniciens</span>
+<span data-i18n="pointBooking"><span aria-hidden="true" class="check">✓</span> Rendez-vous</span>
+</div>
+</div>
+<div aria-label="Aperçu de l'application NoPanne sur téléphone" class="hero-visual" data-i18n-aria="heroVisualAria">
+<div aria-hidden="true" class="visual-orbit orbit-one"></div>
+<div aria-hidden="true" class="visual-orbit orbit-two"></div>
+<div class="visual-tag tag-top"><span aria-hidden="true" class="tag-icon tag-icon-yellow">✦</span><span><strong data-i18n="tagTopTitle">Votre auto, vos services</strong><small data-i18n="tagTopSub">Tout au même endroit</small></span></div>
+<div class="phone-frame">
+<div aria-hidden="true" class="phone-camera"></div>
+<img alt="Capture de l'application montrant les services de dépannage et les mécaniciens" data-i18n="phoneAlt" data-i18n-alt="phoneAlt" height="1040" src="./app-preview.png" width="480"/>
+</div>
+<div class="visual-tag tag-bottom"><span aria-hidden="true" class="tag-icon tag-icon-dark">✓</span><span><strong data-i18n="tagBottomTitle">Simple et pratique</strong><small data-i18n="tagBottomSub">Choisissez selon votre besoin</small></span></div>
+<div aria-hidden="true" class="floating-spark spark-one">✳</div>
+<div aria-hidden="true" class="floating-spark spark-two">✦</div>
+</div>
+</div>
+<div class="container hero-bottom">
+<p data-i18n="heroBottom">Une meilleure façon de gérer les imprévus auto.</p>
+<a class="scroll-link" data-i18n="scrollLink" href="#avantages">Défiler pour découvrir <span aria-hidden="true">↓</span></a>
+</div>
+</section>
+<section aria-label="Services proposés" class="quick-strip" data-i18n-aria="stripAria">
+<div class="container strip-content">
+<span class="strip-label" data-i18n="stripLabel">Pensé pour vos trajets</span>
+<div class="strip-item" data-i18n="stripHelp"><span aria-hidden="true" class="strip-icon">↗</span> Dépannage</div>
+<div class="strip-item" data-i18n="stripMechanics"><span aria-hidden="true" class="strip-icon">⚒</span> Mécaniciens</div>
+<div class="strip-item" data-i18n="stripBooking"><span aria-hidden="true" class="strip-icon">▦</span> Réservation</div>
+<div class="strip-item" data-i18n="stripPromos"><span aria-hidden="true" class="strip-icon">％</span> Promotions</div>
+</div>
+</section>
+<section class="section section-benefits" id="avantages">
+<div class="container">
+<div class="section-intro">
+<p class="eyebrow" data-i18n="benefitsEyebrow"><span class="eyebrow-dot"></span> Pourquoi NoPanne ?</p>
+<h2 data-i18n="benefitsTitle">Moins de stress.<br/><span>Plus de solutions.</span></h2>
+<p data-i18n="benefitsLead">Quand votre voiture a besoin d'aide, le plus important est de savoir par où commencer. NoPanne rassemble les options utiles pour vous aider à passer à l'étape suivante.</p>
+</div>
+<div class="benefit-grid">
+<article class="benefit-card benefit-card-featured">
+<div aria-hidden="true" class="card-icon icon-yellow">
+<svg fill="none" viewbox="0 0 32 32"><path d="M5 19 7.5 12a3 3 0 0 1 2.8-2h11.4a3 3 0 0 1 2.8 2L27 19v5H5v-5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path><path d="M8 17h16M9 23h.01M23 23h.01" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+</div>
+<p class="card-kicker" data-i18n="kickerHelp">01 / Assistance</p>
+<h3 data-i18n="benefitHelpTitle">Quand la route vous arrête</h3>
+<p data-i18n="benefitHelpText">Accédez aux options de dépannage et de remorquage pour rechercher l'aide adaptée à votre situation.</p>
+<a class="card-link" data-i18n="benefitHelpLink" href="#fonctionnement">Voir comment ça marche <span aria-hidden="true">→</span></a>
+<div aria-hidden="true" class="card-decoration">01</div>
+</article>
+<article class="benefit-card">
+<div aria-hidden="true" class="card-icon icon-white">
+<svg fill="none" viewbox="0 0 32 32"><path d="M18.8 7.2a7.2 7.2 0 0 0-9.2 9.2L4.8 21.2a3 3 0 0 0 4.2 4.2l4.8-4.8a7.2 7.2 0 0 0 9.2-9.2l-4.1 4.1-4.3-4.3 4.2-4Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<p class="card-kicker" data-i18n="kickerMechanics">02 / Entretien</p>
+<h3 data-i18n="benefitMechanicsTitle">Un mécanicien à portée de main</h3>
+<p data-i18n="benefitMechanicsText">Explorez les profils de mécaniciens et les prestations d'entretien ou de réparation présentées dans l'application.</p>
+<a class="card-link" data-i18n="benefitMechanicsLink" href="#services">Découvrir les services <span aria-hidden="true">→</span></a>
+</article>
+<article class="benefit-card">
+<div aria-hidden="true" class="card-icon icon-white">
+<svg fill="none" viewbox="0 0 32 32"><rect height="20" rx="3" stroke="currentColor" stroke-width="2" width="21" x="5.5" y="7.5"></rect><path d="M10.5 4.5v6M21.5 4.5v6M6 13.5h20M11 18h3M18 18h3M11 22.5h3" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+</div>
+<p class="card-kicker" data-i18n="kickerBooking">03 / Organisation</p>
+<h3 data-i18n="benefitBookingTitle">Une réservation plus claire</h3>
+<p data-i18n="benefitBookingText">Préparez votre demande, consultez les informations disponibles et choisissez les prochaines étapes en fonction de votre besoin.</p>
+<a class="card-link" data-i18n="benefitBookingLink" href="#fonctionnement">Les étapes en détail <span aria-hidden="true">→</span></a>
+</article>
+<article class="benefit-card benefit-card-wide">
+<div class="wide-card-copy">
+<p class="card-kicker" data-i18n="kickerPromos">04 / Bons plans</p>
+<h3 data-i18n="benefitPromosTitle">Les bonnes surprises aussi font partie du trajet.</h3>
+<p data-i18n="benefitPromosText">Retrouvez les promotions proposées dans l'application et gardez un œil sur les offres disponibles auprès des prestataires.</p>
+<a class="button button-dark" data-i18n="benefitPromosCta" href="#contact">En savoir plus <span aria-hidden="true">→</span></a>
+</div>
+<div aria-hidden="true" class="promo-art">
+<div class="promo-disc disc-back"></div>
+<div class="promo-disc disc-front"><span>%</span><small data-i18n="promoBadge">BONS PLANS</small></div>
+<span class="promo-star star-a">✦</span><span class="promo-star star-b">✳</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="how-section" id="fonctionnement">
+<div class="container how-grid">
+<div class="how-copy">
+<p class="eyebrow eyebrow-light" data-i18n="howEyebrow"><span class="eyebrow-dot"></span> Comment ça marche</p>
+<h2 data-i18n="howTitle">Trois étapes pour<br/><span>reprendre la route.</span></h2>
+<p class="how-lead" data-i18n="howLead">L'application vous guide de la recherche du service jusqu'à la préparation de votre demande.</p>
+<a class="button button-primary" data-i18n="howCta" href="#contact">Parler avec notre équipe <span aria-hidden="true">→</span></a>
+</div>
+<div class="steps-list">
+<article class="step-item">
+<span class="step-number">01</span>
+<div><h3 data-i18n="step1Title">Choisissez votre besoin</h3><p data-i18n="step1Text">Dépannage routier ou service de mécanique : commencez par la catégorie qui vous correspond.</p></div>
+</article>
+<article class="step-item">
+<span class="step-number">02</span>
+<div><h3 data-i18n="step2Title">Consultez les options</h3><p data-i18n="step2Text">Parcourez les prestataires, les informations affichées et les services disponibles.</p></div>
+</article>
+<article class="step-item">
+<span class="step-number">03</span>
+<div><h3 data-i18n="step3Title">Préparez votre réservation</h3><p data-i18n="step3Text">Renseignez les détails utiles et les préférences demandées pour organiser votre intervention.</p></div>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-services" id="services">
+<div class="container service-feature-grid">
+<div aria-hidden="true" class="service-feature-visual">
+<div class="map-card map-card-back"><span class="map-road road-a"></span><span class="map-road road-b"></span><span class="map-road road-c"></span><span class="map-pin pin-one">●</span><span class="map-pin pin-two">●</span></div>
+<div class="service-mini-card"><span class="mini-avatar">AD</span><span><strong data-i18n="miniTitle">Votre prochain service</strong><small data-i18n="miniSub">Dépannage ou mécanique</small></span><span class="mini-arrow">↗</span></div>
+<span class="visual-caption" data-i18n="visualCaption">Une vue d'ensemble, sans multiplier les recherches.</span>
+</div>
+<div class="service-feature-copy">
+<p class="eyebrow" data-i18n="servicesEyebrow"><span class="eyebrow-dot"></span> Au quotidien</p>
+<h2 data-i18n="servicesTitle">Une seule app.<br/><span>Plusieurs façons d'être aidé.</span></h2>
+<p data-i18n="servicesLead">Pour un imprévu ou pour l'entretien de votre voiture, NoPanne vous aide à retrouver au même endroit des services automobiles et les informations nécessaires pour faire votre choix.</p>
+<ul class="feature-check-list">
+<li data-i18n="serviceCheck1"><span aria-hidden="true">✓</span> Dépannage et remorquage routier</li>
+<li data-i18n="serviceCheck2"><span aria-hidden="true">✓</span> Réparation et entretien automobile</li>
+<li data-i18n="serviceCheck3"><span aria-hidden="true">✓</span> Informations sur les prestataires</li>
+<li data-i18n="serviceCheck4"><span aria-hidden="true">✓</span> Promotions et suivi des activités</li>
+</ul>
+<a class="text-arrow-link" data-i18n="servicesQuestion" href="#contact">Des questions sur l'application ? <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</section>
+<section class="contact-section" id="contact">
+<div class="container contact-panel">
+<div aria-hidden="true" class="contact-deco deco-one"></div><div aria-hidden="true" class="contact-deco deco-two"></div>
+<div class="contact-copy">
+<p class="eyebrow" data-i18n="contactEyebrow"><span class="eyebrow-dot"></span> Prêt à découvrir NoPanne ?</p>
+<h2 data-i18n="contactTitle">Gardez l'esprit tranquille.<br/><span>La route vous attend.</span></h2>
+<p data-i18n="contactLead">Vous souhaitez en savoir plus sur l'application, les services ou les disponibilités ? Contactez notre équipe.</p>
+</div>
+<div class="contact-action">
+<!-- Remplacez cette adresse par l'e-mail officiel de l'entreprise. -->
+<a class="button button-dark button-large" data-i18n="contactCta" href="mailto:yahiaongithub@gmail.com?subject=Demande%20d'information%20NoPanne">Nous contacter <span aria-hidden="true">↗</span></a>
+<small data-i18n="contactNote">Réponse selon les horaires de l'équipe.</small>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-main">
+<a aria-label="NoPanne, retour en haut" class="brand footer-brand" data-i18n-aria="footerBrandAria" href="#accueil">
+<span aria-hidden="true" class="brand-mark"><svg fill="none" viewbox="0 0 32 32"><path d="M5 18.5 7.2 12a3 3 0 0 1 2.8-2h12a3 3 0 0 1 2.8 2L27 18.5v5a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 23 23.5V22H9v1.5A1.5 1.5 0 0 1 7.5 25h-1A1.5 1.5 0 0 1 5 23.5v-5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path><path d="M8 17h16M10 21h.01M22 21h.01" stroke="currentColor" stroke-linecap="round" stroke-width="2.3"></path></svg></span>
+<span class="brand-name">NoPanne</span></span>
+</a>
+<p class="footer-tagline" data-i18n="footerTagline">L'assistance auto, plus simple.</p>
+<nav aria-label="Navigation de pied de page" class="footer-links" data-i18n-aria="footerNavAria"><a data-i18n="footerBenefits" href="#avantages">Avantages</a><a data-i18n="footerHow" href="#fonctionnement">Fonctionnement</a><a data-i18n="footerContact" href="#contact">Contact</a></nav>
+</div>
+<div class="container footer-bottom"><span data-i18n="copyright">© <span data-i18n="footerLocation" id="year">2026</span> NoPanne. Tous droits réservés.</span><span>Conçu pour les automobilistes en Algérie.</span></div>
+</footer>
+<script>(() => {
+  const translations = {
+    fr: {
+      skip: 'Aller au contenu', languageLabel: 'Choisir la langue', brandHomeAria: 'NoPanne, accueil', footerBrandAria: 'NoPanne, retour en haut',
+      navAria: 'Navigation principale', navBenefits: 'Avantages', navHow: 'Comment ça marche', navServices: 'Services', navContact: 'Nous contacter <span aria-hidden="true">↗</span>',
+      heroEyebrow: '<span class="eyebrow-dot"></span> L’assistance auto en Algérie', heroTitle: 'Un souci sur la route&nbsp;? <span>On vous aide à avancer.</span>',
+      heroLead: 'Dépannage, remorquage ou mécanicien&nbsp;: retrouvez les services auto dont vous avez besoin et organisez votre prise en charge depuis une seule application.',
+      heroCta: 'Découvrir NoPanne <span aria-hidden="true">→</span>', heroExplore: '<span class="play-icon" aria-hidden="true">▶</span> Explorer les services',
+      heroPointsAria: 'Les points forts', pointHelp: '<span class="check" aria-hidden="true">✓</span> Dépannage &amp; remorquage', pointMechanics: '<span class="check" aria-hidden="true">✓</span> Mécaniciens', pointBooking: '<span class="check" aria-hidden="true">✓</span> Rendez-vous',
+      heroVisualAria: 'Aperçu de l’application NoPanne sur téléphone', tagTopTitle: 'Votre auto, vos services', tagTopSub: 'Tout au même endroit', tagBottomTitle: 'Simple et pratique', tagBottomSub: 'Choisissez selon votre besoin', phoneAlt: 'Capture de l’application montrant les services de dépannage et les mécaniciens',
+      heroBottom: 'Une meilleure façon de gérer les imprévus auto.', scrollLink: 'Défiler pour découvrir <span aria-hidden="true">↓</span>', stripAria: 'Services proposés', stripLabel: 'Pensé pour vos trajets', stripHelp: '<span class="strip-icon" aria-hidden="true">↗</span> Dépannage', stripMechanics: '<span class="strip-icon" aria-hidden="true">⚒</span> Mécaniciens', stripBooking: '<span class="strip-icon" aria-hidden="true">▦</span> Réservation', stripPromos: '<span class="strip-icon" aria-hidden="true">％</span> Promotions',
+      benefitsEyebrow: '<span class="eyebrow-dot"></span> Pourquoi NoPanne&nbsp;?', benefitsTitle: 'Moins de stress.<br><span>Plus de solutions.</span>', benefitsLead: 'Quand votre voiture a besoin d’aide, le plus important est de savoir par où commencer. NoPanne rassemble les options utiles pour vous aider à passer à l’étape suivante.',
+      kickerHelp: '01 / Assistance', benefitHelpTitle: 'Quand la route vous arrête', benefitHelpText: 'Accédez aux options de dépannage et de remorquage pour rechercher l’aide adaptée à votre situation.', benefitHelpLink: 'Voir comment ça marche <span aria-hidden="true">→</span>',
+      kickerMechanics: '02 / Entretien', benefitMechanicsTitle: 'Un mécanicien à portée de main', benefitMechanicsText: 'Explorez les profils de mécaniciens et les prestations d’entretien ou de réparation présentées dans l’application.', benefitMechanicsLink: 'Découvrir les services <span aria-hidden="true">→</span>',
+      kickerBooking: '03 / Organisation', benefitBookingTitle: 'Une réservation plus claire', benefitBookingText: 'Préparez votre demande, consultez les informations disponibles et choisissez les prochaines étapes en fonction de votre besoin.', benefitBookingLink: 'Les étapes en détail <span aria-hidden="true">→</span>',
+      kickerPromos: '04 / Bons plans', benefitPromosTitle: 'Les bonnes surprises aussi font partie du trajet.', benefitPromosText: 'Retrouvez les promotions proposées dans l’application et gardez un œil sur les offres disponibles auprès des prestataires.', benefitPromosCta: 'En savoir plus <span aria-hidden="true">→</span>', promoBadge: 'BONS PLANS',
+      howEyebrow: '<span class="eyebrow-dot"></span> Comment ça marche', howTitle: 'Trois étapes pour<br><span>reprendre la route.</span>', howLead: 'L’application vous guide de la recherche du service jusqu’à la préparation de votre demande.', howCta: 'Parler avec notre équipe <span aria-hidden="true">→</span>',
+      step1Title: 'Choisissez votre besoin', step1Text: 'Dépannage routier ou service de mécanique&nbsp;: commencez par la catégorie qui vous correspond.', step2Title: 'Consultez les options', step2Text: 'Parcourez les prestataires, les informations affichées et les services disponibles.', step3Title: 'Préparez votre réservation', step3Text: 'Renseignez les détails utiles et les préférences demandées pour organiser votre intervention.',
+      miniTitle: 'Votre prochain service', miniSub: 'Dépannage ou mécanique', visualCaption: 'Une vue d’ensemble, sans multiplier les recherches.', servicesEyebrow: '<span class="eyebrow-dot"></span> Au quotidien', servicesTitle: 'Une seule app.<br><span>Plusieurs façons d’être aidé.</span>', servicesLead: 'Pour un imprévu ou pour l’entretien de votre voiture, NoPanne vous aide à retrouver au même endroit des services automobiles et les informations nécessaires pour faire votre choix.',
+      serviceCheck1: '<span aria-hidden="true">✓</span> Dépannage et remorquage routier', serviceCheck2: '<span aria-hidden="true">✓</span> Réparation et entretien automobile', serviceCheck3: '<span aria-hidden="true">✓</span> Informations sur les prestataires', serviceCheck4: '<span aria-hidden="true">✓</span> Promotions et suivi des activités', servicesQuestion: 'Des questions sur l’application&nbsp;? <span aria-hidden="true">→</span>',
+      contactEyebrow: '<span class="eyebrow-dot"></span> Prêt à découvrir NoPanne&nbsp;?', contactTitle: 'Gardez l’esprit tranquille.<br><span>La route vous attend.</span>', contactLead: 'Vous souhaitez en savoir plus sur l’application, les services ou les disponibilités&nbsp;? Contactez notre équipe.', contactCta: 'Nous contacter <span aria-hidden="true">↗</span>', contactNote: 'Réponse selon les horaires de l’équipe.', footerTagline: 'L’assistance auto, plus simple.', footerNavAria: 'Navigation de pied de page', footerBenefits: 'Avantages', footerHow: 'Fonctionnement', footerContact: 'Contact', copyright: '© <span id="year">2026</span> NoPanne. Tous droits réservés.', footerLocation: 'Conçu pour les automobilistes en Algérie.'
+    },
+    ar: {
+      skip: 'انتقل إلى المحتوى', languageLabel: 'اختر اللغة', brandHomeAria: 'أوتو دي زد، الصفحة الرئيسية', footerBrandAria: 'أوتو دي زد، العودة إلى الأعلى',
+      navAria: 'التنقل الرئيسي', navBenefits: 'المزايا', navHow: 'كيف يعمل', navServices: 'الخدمات', navContact: 'اتصل بنا <span aria-hidden="true">↗</span>',
+      heroEyebrow: '<span class="eyebrow-dot"></span> المساعدة على الطريق في الجزائر', heroTitle: 'هل تعطلت سيارتك؟ <span>نساعدك على مواصلة الطريق.</span>',
+      heroLead: 'خدمة المساعدة على الطريق، وسحب السيارات، والميكانيكيون: اكتشف خدمات السيارات التي تحتاجها ونظّم طلبك من خلال تطبيق واحد.',
+      heroCta: 'اكتشف NoPanne <span aria-hidden="true">←</span>', heroExplore: '<span class="play-icon" aria-hidden="true">▶</span> استكشف الخدمات',
+      heroPointsAria: 'أهم المزايا', pointHelp: '<span class="check" aria-hidden="true">✓</span> المساعدة وسحب السيارات', pointMechanics: '<span class="check" aria-hidden="true">✓</span> ميكانيكيون', pointBooking: '<span class="check" aria-hidden="true">✓</span> حجز المواعيد',
+      heroVisualAria: 'معاينة تطبيق NoPanne على الهاتف', tagTopTitle: 'سيارتك، خدماتك', tagTopSub: 'كل شيء في مكان واحد', tagBottomTitle: 'سهل وعملي', tagBottomSub: 'اختر ما يناسب احتياجك', phoneAlt: 'لقطة من التطبيق تعرض خدمات المساعدة على الطريق والميكانيكيين',
+      heroBottom: 'طريقة أسهل للتعامل مع أعطال السيارة المفاجئة.', scrollLink: 'مرّر لاكتشاف المزيد <span aria-hidden="true">↓</span>', stripAria: 'الخدمات المتاحة', stripLabel: 'مصمم لرحلاتك', stripHelp: '<span class="strip-icon" aria-hidden="true">↗</span> المساعدة على الطريق', stripMechanics: '<span class="strip-icon" aria-hidden="true">⚒</span> ميكانيكيون', stripBooking: '<span class="strip-icon" aria-hidden="true">▦</span> الحجز', stripPromos: '<span class="strip-icon" aria-hidden="true">％</span> عروض وتخفيضات',
+      benefitsEyebrow: '<span class="eyebrow-dot"></span> لماذا NoPanne؟', benefitsTitle: 'ضغط أقل.<br><span>حلول أكثر.</span>', benefitsLead: 'عندما تحتاج سيارتك إلى المساعدة، فإن أهم خطوة هي معرفة من أين تبدأ. يجمع NoPanne الخيارات المفيدة لمساعدتك على اتخاذ الخطوة التالية.',
+      kickerHelp: '01 / المساعدة', benefitHelpTitle: 'عندما تتوقف بك السيارة', benefitHelpText: 'تعرّف على خيارات المساعدة على الطريق وسحب السيارات للعثور على الخدمة المناسبة لحالتك.', benefitHelpLink: 'اكتشف كيف يعمل <span aria-hidden="true">←</span>',
+      kickerMechanics: '02 / الصيانة', benefitMechanicsTitle: 'الميكانيكي أقرب إليك', benefitMechanicsText: 'استكشف ملفات الميكانيكيين وخدمات صيانة السيارات وإصلاحها المعروضة في التطبيق.', benefitMechanicsLink: 'اكتشف الخدمات <span aria-hidden="true">←</span>',
+      kickerBooking: '03 / التنظيم', benefitBookingTitle: 'حجز أكثر وضوحًا', benefitBookingText: 'حضّر طلبك، واطّلع على المعلومات المتاحة، وحدد الخطوات التالية وفقًا لاحتياجك.', benefitBookingLink: 'اطّلع على الخطوات <span aria-hidden="true">←</span>',
+      kickerPromos: '04 / عروض مميزة', benefitPromosTitle: 'العروض الجيدة جزء من الرحلة أيضًا.', benefitPromosText: 'تابع العروض والتخفيضات المتاحة في التطبيق لدى مقدمي الخدمات.', benefitPromosCta: 'اعرف المزيد <span aria-hidden="true">←</span>', promoBadge: 'عروض مميزة',
+      howEyebrow: '<span class="eyebrow-dot"></span> كيف يعمل', howTitle: 'ثلاث خطوات<br><span>لتعود إلى الطريق.</span>', howLead: 'يرشدك التطبيق من البحث عن الخدمة إلى تجهيز طلبك.', howCta: 'تواصل مع فريقنا <span aria-hidden="true">←</span>',
+      step1Title: 'اختر ما تحتاج إليه', step1Text: 'مساعدة على الطريق أو خدمة ميكانيكي: ابدأ بالفئة المناسبة لك.', step2Title: 'اطّلع على الخيارات', step2Text: 'تصفّح مقدمي الخدمات والمعلومات المعروضة والخدمات المتاحة.', step3Title: 'حضّر حجزك', step3Text: 'أدخل التفاصيل اللازمة وتفضيلاتك لتنظيم الخدمة التي تحتاجها.',
+      miniTitle: 'خدمتك القادمة', miniSub: 'مساعدة على الطريق أو ميكانيك', visualCaption: 'كل الخيارات أمامك دون الحاجة إلى عمليات بحث متعددة.', servicesEyebrow: '<span class="eyebrow-dot"></span> في حياتك اليومية', servicesTitle: 'تطبيق واحد.<br><span>طرق متعددة لمساعدتك.</span>', servicesLead: 'سواء واجهت عطلًا مفاجئًا أو احتجت إلى صيانة سيارتك، يساعدك NoPanne على العثور في مكان واحد على خدمات السيارات والمعلومات التي تحتاجها للاختيار.',
+      serviceCheck1: '<span aria-hidden="true">✓</span> المساعدة على الطريق وسحب السيارات', serviceCheck2: '<span aria-hidden="true">✓</span> إصلاح السيارات وصيانتها', serviceCheck3: '<span aria-hidden="true">✓</span> معلومات عن مقدمي الخدمات', serviceCheck4: '<span aria-hidden="true">✓</span> العروض ومتابعة الأنشطة', servicesQuestion: 'لديك أسئلة عن التطبيق؟ <span aria-hidden="true">←</span>',
+      contactEyebrow: '<span class="eyebrow-dot"></span> هل أنت مستعد لاكتشاف NoPanne؟', contactTitle: 'كن مطمئنًا.<br><span>الطريق بانتظارك.</span>', contactLead: 'هل تريد معرفة المزيد عن التطبيق أو الخدمات أو المواعيد المتاحة؟ تواصل مع فريقنا.', contactCta: 'اتصل بنا <span aria-hidden="true">↗</span>', contactNote: 'يتم الرد وفق أوقات عمل الفريق.', footerTagline: 'المساعدة على الطريق، بطريقة أسهل.', footerNavAria: 'روابط أسفل الصفحة', footerBenefits: 'المزايا', footerHow: 'طريقة العمل', footerContact: 'اتصل بنا', copyright: '© <span id="year">2026</span> NoPanne. جميع الحقوق محفوظة.', footerLocation: 'صُمم لسائقي السيارات في الجزائر.'
+    }
+  };
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#accueil" aria-label="NoPanne, accueil">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none"><path d="M5 18.5 7.2 12a3 3 0 0 1 2.8-2h12a3 3 0 0 1 2.8 2L27 18.5v5a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 23 23.5V22H9v1.5A1.5 1.5 0 0 1 7.5 25h-1A1.5 1.5 0 0 1 5 23.5v-5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 17h16M10 21h.01M22 21h.01" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg>
-        </span>
-        <span class="brand-name">No<span>Panne</span></span>
-      </a>
+  const originalYear = new Date().getFullYear();
+  document.querySelectorAll('#year').forEach(el => el.textContent = originalYear);
 
-      <nav class="nav-links" aria-label="Navigation principale">
-        <a href="#avantages">Avantages</a>
-        <a href="#fonctionnement">Comment ça marche</a>
-        <a href="#services">Services</a>
-      </nav>
+  function setLanguage(lang) {
+    const chosen = lang === 'ar' ? 'ar' : 'fr';
+    document.documentElement.lang = chosen;
+    document.documentElement.dir = chosen === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.dataset.language = chosen;
+    document.title = chosen === 'ar' ? 'NoPanne — المساعدة على الطريق أصبحت أسهل' : 'NoPanne — L’assistance auto, plus simple';
+    const description = document.querySelector('meta[name="description"]');
+    if (description) description.content = chosen === 'ar'
+      ? 'يساعدك NoPanne في العثور على خدمات المساعدة على الطريق والميكانيكيين وتنظيم طلبات الخدمة في الجزائر.'
+      : 'NoPanne vous aide à trouver un service de dépannage ou un mécanicien et à organiser votre demande en Algérie.';
 
-      <a class="button button-nav" href="#contact">Nous contacter <span aria-hidden="true">↗</span></a>
-    </div>
-  </header>
-
-  <main id="contenu">
-    <section class="hero section-shell" id="accueil">
-      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-dot"></span> L'assistance auto en Algérie</div>
-          <h1>Un souci sur la route&nbsp;? <span>On vous aide à avancer.</span></h1>
-          <p class="hero-lead">Dépannage, remorquage ou mécanicien&nbsp;: retrouvez les services auto dont vous avez besoin et organisez votre prise en charge depuis une seule application.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#fonctionnement">Découvrir NoPanne <span aria-hidden="true">→</span></a>
-            <a class="button button-quiet" href="#services"><span class="play-icon" aria-hidden="true">▶</span> Explorer les services</a>
-          </div>
-          <div class="hero-points" aria-label="Les points forts">
-            <span><span class="check" aria-hidden="true">✓</span> Dépannage & remorquage</span>
-            <span><span class="check" aria-hidden="true">✓</span> Mécaniciens</span>
-            <span><span class="check" aria-hidden="true">✓</span> Rendez-vous</span>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="Aperçu de l'application NoPanne sur téléphone">
-          <div class="visual-orbit orbit-one" aria-hidden="true"></div>
-          <div class="visual-orbit orbit-two" aria-hidden="true"></div>
-          <div class="visual-tag tag-top"><span class="tag-icon tag-icon-yellow" aria-hidden="true">✦</span><span><strong>Votre auto, vos services</strong><small>Tout au même endroit</small></span></div>
-          <div class="phone-frame">
-            <div class="phone-camera" aria-hidden="true"></div>
-            <img src="app-preview.png" alt="Capture de l'application montrant les services de dépannage et les mécaniciens" width="480" height="1040">
-          </div>
-          <div class="visual-tag tag-bottom"><span class="tag-icon tag-icon-dark" aria-hidden="true">✓</span><span><strong>Simple et pratique</strong><small>Choisissez selon votre besoin</small></span></div>
-          <div class="floating-spark spark-one" aria-hidden="true">✳</div>
-          <div class="floating-spark spark-two" aria-hidden="true">✦</div>
-        </div>
-      </div>
-      <div class="container hero-bottom">
-        <p>Une meilleure façon de gérer les imprévus auto.</p>
-        <a href="#avantages" class="scroll-link">Défiler pour découvrir <span aria-hidden="true">↓</span></a>
-      </div>
-    </section>
-
-    <section class="quick-strip" aria-label="Services proposés">
-      <div class="container strip-content">
-        <span class="strip-label">Pensé pour vos trajets</span>
-        <div class="strip-item"><span class="strip-icon" aria-hidden="true">↗</span> Dépannage</div>
-        <div class="strip-item"><span class="strip-icon" aria-hidden="true">⚒</span> Mécaniciens</div>
-        <div class="strip-item"><span class="strip-icon" aria-hidden="true">▦</span> Réservation</div>
-        <div class="strip-item"><span class="strip-icon" aria-hidden="true">％</span> Promotions</div>
-      </div>
-    </section>
-
-    <section class="section section-benefits" id="avantages">
-      <div class="container">
-        <div class="section-intro">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Pourquoi NoPanne&nbsp;?</p>
-          <h2>Moins de stress.<br><span>Plus de solutions.</span></h2>
-          <p>Quand votre voiture a besoin d'aide, le plus important est de savoir par où commencer. NoPanne rassemble les options utiles pour vous aider à passer à l'étape suivante.</p>
-        </div>
-
-        <div class="benefit-grid">
-          <article class="benefit-card benefit-card-featured">
-            <div class="card-icon icon-yellow" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none"><path d="M5 19 7.5 12a3 3 0 0 1 2.8-2h11.4a3 3 0 0 1 2.8 2L27 19v5H5v-5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 17h16M9 23h.01M23 23h.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-            </div>
-            <p class="card-kicker">01 / Assistance</p>
-            <h3>Quand la route vous arrête</h3>
-            <p>Accédez aux options de dépannage et de remorquage pour rechercher l'aide adaptée à votre situation.</p>
-            <a href="#fonctionnement" class="card-link">Voir comment ça marche <span aria-hidden="true">→</span></a>
-            <div class="card-decoration" aria-hidden="true">01</div>
-          </article>
-
-          <article class="benefit-card">
-            <div class="card-icon icon-white" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none"><path d="M18.8 7.2a7.2 7.2 0 0 0-9.2 9.2L4.8 21.2a3 3 0 0 0 4.2 4.2l4.8-4.8a7.2 7.2 0 0 0 9.2-9.2l-4.1 4.1-4.3-4.3 4.2-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-            </div>
-            <p class="card-kicker">02 / Entretien</p>
-            <h3>Un mécanicien à portée de main</h3>
-            <p>Explorez les profils de mécaniciens et les prestations d'entretien ou de réparation présentées dans l'application.</p>
-            <a href="#services" class="card-link">Découvrir les services <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="benefit-card">
-            <div class="card-icon icon-white" aria-hidden="true">
-              <svg viewBox="0 0 32 32" fill="none"><rect x="5.5" y="7.5" width="21" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M10.5 4.5v6M21.5 4.5v6M6 13.5h20M11 18h3M18 18h3M11 22.5h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <p class="card-kicker">03 / Organisation</p>
-            <h3>Une réservation plus claire</h3>
-            <p>Préparez votre demande, consultez les informations disponibles et choisissez les prochaines étapes en fonction de votre besoin.</p>
-            <a href="#fonctionnement" class="card-link">Les étapes en détail <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="benefit-card benefit-card-wide">
-            <div class="wide-card-copy">
-              <p class="card-kicker">04 / Bons plans</p>
-              <h3>Les bonnes surprises aussi font partie du trajet.</h3>
-              <p>Retrouvez les promotions proposées dans l'application et gardez un œil sur les offres disponibles auprès des prestataires.</p>
-              <a href="#contact" class="button button-dark">En savoir plus <span aria-hidden="true">→</span></a>
-            </div>
-            <div class="promo-art" aria-hidden="true">
-              <div class="promo-disc disc-back"></div>
-              <div class="promo-disc disc-front"><span>%</span><small>BONS PLANS</small></div>
-              <span class="promo-star star-a">✦</span><span class="promo-star star-b">✳</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="how-section" id="fonctionnement">
-      <div class="container how-grid">
-        <div class="how-copy">
-          <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Comment ça marche</p>
-          <h2>Trois étapes pour<br><span>reprendre la route.</span></h2>
-          <p class="how-lead">L'application vous guide de la recherche du service jusqu'à la préparation de votre demande.</p>
-          <a class="button button-primary" href="#contact">Parler avec notre équipe <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="steps-list">
-          <article class="step-item">
-            <span class="step-number">01</span>
-            <div><h3>Choisissez votre besoin</h3><p>Dépannage routier ou service de mécanique&nbsp;: commencez par la catégorie qui vous correspond.</p></div>
-          </article>
-          <article class="step-item">
-            <span class="step-number">02</span>
-            <div><h3>Consultez les options</h3><p>Parcourez les prestataires, les informations affichées et les services disponibles.</p></div>
-          </article>
-          <article class="step-item">
-            <span class="step-number">03</span>
-            <div><h3>Préparez votre réservation</h3><p>Renseignez les détails utiles et les préférences demandées pour organiser votre intervention.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-services" id="services">
-      <div class="container service-feature-grid">
-        <div class="service-feature-visual" aria-hidden="true">
-          <div class="map-card map-card-back"><span class="map-road road-a"></span><span class="map-road road-b"></span><span class="map-road road-c"></span><span class="map-pin pin-one">●</span><span class="map-pin pin-two">●</span></div>
-          <div class="service-mini-card"><span class="mini-avatar">AD</span><span><strong>Votre prochain service</strong><small>Dépannage ou mécanique</small></span><span class="mini-arrow">↗</span></div>
-          <span class="visual-caption">Une vue d'ensemble, sans multiplier les recherches.</span>
-        </div>
-        <div class="service-feature-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Au quotidien</p>
-          <h2>Une seule app.<br><span>Plusieurs façons d'être aidé.</span></h2>
-          <p>Pour un imprévu ou pour l'entretien de votre voiture, NoPanne vous aide à retrouver au même endroit des services automobiles et les informations nécessaires pour faire votre choix.</p>
-          <ul class="feature-check-list">
-            <li><span aria-hidden="true">✓</span> Dépannage et remorquage routier</li>
-            <li><span aria-hidden="true">✓</span> Réparation et entretien automobile</li>
-            <li><span aria-hidden="true">✓</span> Informations sur les prestataires</li>
-            <li><span aria-hidden="true">✓</span> Promotions et suivi des activités</li>
-          </ul>
-          <a class="text-arrow-link" href="#contact">Des questions sur l'application&nbsp;? <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="container contact-panel">
-        <div class="contact-deco deco-one" aria-hidden="true"></div><div class="contact-deco deco-two" aria-hidden="true"></div>
-        <div class="contact-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Prêt à découvrir NoPanne&nbsp;?</p>
-          <h2>Gardez l'esprit tranquille.<br><span>La route vous attend.</span></h2>
-          <p>Vous souhaitez en savoir plus sur l'application, les services ou les disponibilités&nbsp;? Contactez notre équipe.</p>
-        </div>
-        <div class="contact-action">
-          <!-- Remplacez cette adresse par l'e-mail officiel de l'entreprise. -->
-          <a class="button button-dark button-large" href="mailto:yahiaongithub@gmail.com?subject=Demande%20d'information%20NoPanne">Nous contacter <span aria-hidden="true">↗</span></a>
-          <small>Réponse selon les horaires de l'équipe.</small>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-main">
-      <a class="brand footer-brand" href="#accueil" aria-label="NoPanne, retour en haut">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M5 18.5 7.2 12a3 3 0 0 1 2.8-2h12a3 3 0 0 1 2.8 2L27 18.5v5a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 23 23.5V22H9v1.5A1.5 1.5 0 0 1 7.5 25h-1A1.5 1.5 0 0 1 5 23.5v-5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 17h16M10 21h.01M22 21h.01" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg></span>
-        <span class="brand-name">No<span>Panne</span></span>
-      </a>
-      <p class="footer-tagline">L'assistance auto, plus simple.</p>
-      <nav class="footer-links" aria-label="Navigation de pied de page"><a href="#avantages">Avantages</a><a href="#fonctionnement">Fonctionnement</a><a href="#contact">Contact</a></nav>
-    </div>
-    <div class="container footer-bottom"><span>© <span id="year">2026</span> NoPanne. Tous droits réservés.</span><span>Conçu pour les automobilistes en Algérie.</span></div>
-  </footer>
-</body>
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      if (translations[chosen][key] !== undefined) el.innerHTML = translations[chosen][key];
+    });
+    document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+      const key = el.dataset.i18nAria;
+      if (translations[chosen][key] !== undefined) el.setAttribute('aria-label', translations[chosen][key].replace(/<[^>]*>/g, ''));
+    });
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+      const key = el.dataset.i18nAlt;
+      if (translations[chosen][key] !== undefined) el.alt = translations[chosen][key];
+    });
+    document.querySelectorAll('.language-button').forEach(button => {
+      const active = button.dataset.lang === chosen;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    try { localStorage.setItem('nopanne-language', chosen); } catch (_) {}
+  }
+  document.querySelectorAll('.language-button').forEach(button => {
+    button.addEventListener('click', () => setLanguage(button.dataset.lang));
+  });
+  // French is the default on a fresh visit; retain the visitor's choice on return.
+  let initial = 'fr';
+  try { initial = localStorage.getItem('nopanne-language') || 'fr'; } catch (_) {}
+  setLanguage(initial);
+})();</script></body>
 </html>
